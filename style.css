@@ -31,7 +31,7 @@ h1 {
   margin-block-start: 0.91rem;
   /* max-width: 2.5rem; */
   border: 1px solid #FF9697;
-  flex: 0 1 20%;
+  flex: 0 1 10%;
 }
 
 #todo-input {
@@ -46,15 +46,24 @@ h1 {
   padding: 0;
 }
 
+li{
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.21rem 0.6rem 0.21rem 1rem;
+  border-radius: 0.325rem;
+}
+
 .todo-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
   margin-bottom: .8rem;
-  padding: 0.21rem 0.6rem 0.21rem 1rem;
   border: 1px solid #ccc;
-  border-radius: 0.325rem;
 }
 
 .theme-toggle{
@@ -81,4 +90,7 @@ h1 {
 
 .slideInLeft {
   animation: slideInLeft 3000ms ease-in;
+}
+.theme-toggle{
+  background-color: darkblue !important;
 }
