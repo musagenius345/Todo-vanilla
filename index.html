@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <title>Simple JS ToDo App</title>
+  <link rel="stylesheet" href="pico.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <div class="container">
+    <div class="flex">
     <h1>Todo App</h1>
-    <div class="todo-form">
+    <button class="themeToggle theme-toggle mode" style="border: none; background: none; font-size: 24px; cursor: pointer;">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-lightbulb" style="display: none;"></i>
+    </button>
+    </div>
+    <div class="todo-form grid">
       <input type="text" id="todo-input" placeholder="Enter a new task">
       <button id="add-button">Add</button>
     </div>
@@ -27,4 +33,5 @@
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>
